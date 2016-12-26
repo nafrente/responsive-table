@@ -1,1 +1,34 @@
 /* Responsive table styles */
+
+
+@media screen and (max-width: 1060px) {
+	thead{  
+		display: none;
+	}
+	tr{
+	    margin: 5px 0;
+	    display: block;
+	    border-bottom: $border1;
+	}
+	td{
+	    padding: 4px 10px;
+	    display: block;
+	    width: 100%;
+	    border: none !important;
+	}
+	td.center {
+	    text-align: left;
+	}
+	td::before{
+	    content: attr(data-head) ": ";
+	    font-weight: 700;
+	    display: inline-block;
+	    position: relative;
+	    left: 0;
+	    min-width: 130px;
+	    padding: 10px 0;
+	    font-size: 14px;
+	}
+
+}
+
